@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { abi } from '../abi';
 import Web3 from 'web3';
 import gif from '../ASSETS/loader.gif';
-
+import trees from '../ASSETS/Trees.mp4';
 const HomePage = ({ contract, setUser }) => {
   const navigate = useNavigate();
   const [loader, setLoader] = useState(false);
@@ -73,9 +73,23 @@ const HomePage = ({ contract, setUser }) => {
       alert('Please Install Metamask to use this Application');
     }
   };
+  const width = window.outerWidth
+  const height = window.outerHeight
 
   return (
-    <div style={{backgroundColor:'#52796F',width:'208.7vh',height:'100vh',display:'flex',justifyContent:'center',alignItems:'center',color :'#fff'}}>
+    <div>
+    <div style={{display:'flex',flexDirection:'column',alignItems:'center',zIndex:100,position:'absolute',textAlign:'center',width:'100%',height:'100%',justifyContent:'center'}}>
+    <h1 style={{marginBottom:'-5px',color:'#ffff',fontSize:'90px'}}>BIO HERITAGE</h1>
+    <p style={{color:'#fff'}}>AN DECENTRALIZED PLATFORM FOR ENVIRONMENT ENGAGEMENT</p>
+    <Connectbtn onClick={handleRegister} >Connect to Wallet</Connectbtn>
+    </div>
+      <video autoPlay loop muted style={{width:'100%',height:'100%',objectFit:'cover'}} >
+      <source  src={trees} type="video/mp4"  />
+
+      
+    </video>
+    </div>
+   /* <div style={{backgroundColor:'#52796F',width:'210.5vh',height:'100vh',display:'flex',justifyContent:'center',alignItems:'center',color :'#fff'}}>
         {loader && <Loader src={gif} alt="loading..." />}
         <div style={{textAlign:'center'}}>
           <h1 style={{marginBottom:'-5px'}}>BIO HERITAGE</h1>
@@ -85,7 +99,7 @@ const HomePage = ({ contract, setUser }) => {
         </div>
         </div>
         
-      </div>
+      </div> */
   );
 };
 
