@@ -83,7 +83,7 @@ const HomePage = ({ contract, setUser }) => {
     <p style={{color:'#fff'}}>AN DECENTRALIZED PLATFORM FOR ENVIRONMENT ENGAGEMENT</p>
     <Connectbtn onClick={handleRegister} >Connect to Wallet</Connectbtn>
     </div>
-      <video autoPlay loop muted style={{width:'100%',height:'100%',objectFit:'cover'}} >
+    <video autoPlay loop muted style={{width:'100%',height:'100%',objectFit:'cover',position:'fixed'}} >
       <source  src={trees} type="video/mp4"  />
 
       
