@@ -97,7 +97,7 @@ const DashboardPage = ({ contract, user, setUser }) => {
 
 const DashboardContainer = styled.div`
   padding: 20px;
-  background-color: #e8f5e9;
+  background-color: #357266;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,7 +111,7 @@ const DashboardContainer = styled.div`
   }
 
   h1 {
-    color: #2e7d32;
+    color: #e4ebe9;
     margin-bottom: 20px;
     font-size: 2rem;
   }

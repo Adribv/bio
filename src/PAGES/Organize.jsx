@@ -134,7 +134,7 @@ const Organize = ({ contract, user, setUser }) => {
   };
 
   return (
-    <OrganizeContainer>
+    /*<OrganizeContainer>
       <FormContainer>
         <h1>Create Event</h1>
         <form onSubmit={handleSubmitForm}>
@@ -175,11 +175,70 @@ const Organize = ({ contract, user, setUser }) => {
           <button type="submit">Create Event</button>
         </form>
       </FormContainer>
+      
+    </OrganizeContainer>*/
+
+    <div className="App" style={{backgroundColor:'#357266',display:'flex',flexDirection:'column',alignItems:'center',position:'relative',textAlign:'center',justifyContent:'center',height:'100vh',width:'100vw',filter:'drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5))'}}>
+      <div style={{border:'6px solid white',padding:'60px',borderRadius:'20px',filter:'drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5))'}}>
+        <h1>Create Event</h1>
+        <form onSubmit={handleSubmitForm} > 
+        <div style={{"display":"flex",flexDirection:'row',alignItems:'center',justifyContent:'center',gap:25}}>
+          <div>
+          <input
+            style={{border:'none',outline:'none',backgroundColor: '#E4EBE9',borderRadius: '5px',padding: '15px',margin: '10px',color: 'black',width:'85%'}}
+            type="text"
+            placeholder="Event Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          </div>
+          <div>
+          <input
+          style={{border:'none',outline:'none',backgroundColor: '#E4EBE9',borderRadius: '5px',padding: '15px',margin: '10px',color: 'black',width:'85%'}}
+            type="text"
+            placeholder="Location"
+            value={location}
+            onChange={(e) => setLocation(e.target.value)}
+          />
+          </div>
+          </div>
+          <div style={{marginLeft:'10px',display:'flex',flexDirection:'row',alignItems:'center',justifyContent:'center',gap:10}}>
+          <div>
+            <input
+              style={{border:'none',outline:'none',backgroundColor: '#E4EBE9',borderRadius: '5px',padding: '14px',margin: '10px',color: 'gray'}}
+              type="datetime-local"
+              placeholder='Start Date'
+              value={startTime}
+              onChange={(e) => setStartTime(e.target.value)}
+            />
+          </div>
+          <div>
+            <input
+              style={{border:'none',outline:'none',backgroundColor: '#E4EBE9',borderRadius: '5px',padding: '14px',margin: '10px',color: 'gray'}}
+              type="datetime-local"
+              value={endTime}
+              onChange={(e) => setEndTime(e.target.value)}
+            />
+          </div>
+          </div>
+          <div>
+            <input
+            type="text"
+            placeholder="Mobile Number"
+            style={{border:'none',outline:'none',backgroundColor: '#E4EBE9',borderRadius: '5px',padding: '15px',margin: '10px',color: 'black',width:'86%',marginLeft:'20px',marginBottom:'50px'}}
+            value={mobileNumber}
+            onChange={(e) => setMobileNumber(e.target.value)}
+          />
+          </div>
+          <button style={{padding:'20px',width:'70%',color:'#E4EBE9'}} type="submit">Create Event</button>
+        </form>
+        
+      </div>
       <MenuContainer>
         <Menu contract={contract} user={user} />
       </MenuContainer>
       {loader && <Loader src={gif} alt="Loader" />}
-    </OrganizeContainer>
+    </div>
   );
 };
 

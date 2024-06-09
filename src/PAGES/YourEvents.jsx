@@ -115,7 +115,7 @@ const MenuContainer = styled.div`
 
 const EventsContainer = styled.div`
   padding: 20px;
-  background-color: #e8f5e9;
+  background-color: #357266;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,7 +126,7 @@ const EventsContainer = styled.div`
     right: 1rem;
   }
   h1 {
-    color: #2e7d32;
+    color: #e4ebe9;
     margin-bottom: 20px;
     font-size: 2rem;
   }

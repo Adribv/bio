@@ -109,12 +109,13 @@ const MarketPage = ({ contract, user, setUser }) => {
 
 const MarketContainer = styled.div`
   padding: 20px;
-  margin-top: 4rem;
   position: relative; /* Ensure relative positioning for the loader */
+  background-color: #357266;
 `;
 
 const MenuContainer = styled.div`
   position: absolute;
+  margin-top: 4rem;
   top: 0rem;
   right: 1rem;
   display: flex;
@@ -138,7 +139,7 @@ const MenuContainer = styled.div`
 
 const ProductGrid = styled.div`
   display: grid;
-  margin-top: 40px;
+  margin-top: 120px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 `;

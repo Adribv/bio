@@ -104,7 +104,7 @@ const HomePage = ({ contract, setUser }) => {
 };
 
 const Connectbtn = styled.button`
-  background-color: #04AA6D;
+  background-color: black;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -124,7 +124,7 @@ const HomeContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(to bottom, #e8f5e9, #c8e6c9);
+  background: linear-gradient(to bottom, #357266, #c8e6c9);
   position: relative;
 `;
 

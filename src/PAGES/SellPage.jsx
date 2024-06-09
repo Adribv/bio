@@ -71,7 +71,7 @@ const MenuContainer = styled.div`
 
 const SellContainer = styled.div`
   padding: 20px;
-  background-color: #ffffff;
+  background-color: #357266;
   display: flex;
   flex-direction: column;
   align-items: center;

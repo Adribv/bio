@@ -19,6 +19,12 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+button:hover {
+  color:wheat;
+  background-color: #10151D;
+  transform: scale(1.05);
+  transition: transform .5s;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
